@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/user",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "实时热点新闻网",
+    "navigationBarBackgroundColor": "#31C27C",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectcolor": "#31c27c",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "static/首页-置灰.png",
+        "selectedIconPath": "static/首页-选中.png"
+      },
+      {
+        "text": "个人",
+        "pagePath": "pages/user/user",
+        "iconPath": "static/个人中心-置灰.png",
+        "selectedIconPath": "static/个人中心-选中·.png"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

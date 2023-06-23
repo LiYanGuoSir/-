@@ -1,0 +1,59 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "实时热点新闻网"
+			}
+		}
+	    ,{
+            "path" : "pages/user/user",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人中心",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "新闻详情页",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	//设置所有页面顶部标题的默认样式
+	"globalStyle": {
+		// 以下三个属性分别代表页面顶部标题文字的颜色、顶部标题文字的内容、顶部标题文字所在背景的颜色、
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "实时热点新闻网",
+		"navigationBarBackgroundColor": "#31C27C",
+		// 窗口背景颜色
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {},
+	//tabar配置项用于配置底部导航栏上的图标选项的样式（图标颜色、图标选中时颜色等等）
+	"tabBar": {
+		//color与selectcolor分别代表底部导航栏上的所有图标未选中/选中时的颜色
+		"color":"#666",
+		"selectcolor":"#31c27c",
+		//list属性中的每一个元素都对应底部导航栏上的一个按钮选项，该元素中可以添加各种键值对，来设置该选项按钮的样式
+		"list": [
+			{
+				"text":"首页",
+				//text属性代表底部导航栏上第一个按钮选项叫首页，并且点击该按钮后会跳转到pagepath属性值所在的index.vue渲染的页面
+				"pagePath": "pages/index/index",
+				"iconPath": "static/首页-置灰.png",
+				"selectedIconPath": "static/首页-选中.png"
+			},{
+				"text": "个人",
+				"pagePath": "pages/user/user",
+				"iconPath": "static/个人中心-置灰.png",
+				"selectedIconPath": "static/个人中心-选中·.png"
+			}
+		]
+	}
+}

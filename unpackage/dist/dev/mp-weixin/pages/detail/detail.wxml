@@ -1,0 +1,1 @@
+<view class="detail"><view class="title">{{detail.title}}</view><view class="info"><view class="author">{{detail.author}}</view><view class="time">{{detail.posttime}}</view></view><view class="content"><rich-text nodes="{{detail.content}}"></rich-text></view><view class="description">免责声明:本站出现的所有内容仅供学术交流使用,禁止产生利益,违者后果自负,与我无关.</view></view>

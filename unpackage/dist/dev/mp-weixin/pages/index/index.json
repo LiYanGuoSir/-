@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "实时热点新闻网",
+  "usingComponents": {
+    "newsbox": "/components/newsbox/newsbox"
+  }
+}
